@@ -57,7 +57,7 @@ header .container {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x400');
+    background: gray;
     background-size: cover;
     color: var(--white);
     padding: 60px 0;
