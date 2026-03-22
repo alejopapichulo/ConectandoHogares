@@ -78,6 +78,10 @@ header .container {
     margin: 0 auto;
     gap: 20px;
 }
+.ws{
+    text-decoration: none;
+    color: white;
+}
 
 .info-image {
     flex: 1;
