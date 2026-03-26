@@ -1,0 +1,141 @@
+:root {
+    --primary: #2563eb;    /* Azul profesional */
+    --secondary: #fbbf24;  /* Amarillo/Naranja para el span */
+    --white: #ffffff;
+    --dark: #1e293b;
+    --light-bg: #f8fafc;
+    --gray: #64748b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- HEADER (Tu código con ajustes) --- */
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--secondary);
+}
+
+.shop-link {
+    display: block;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.shop-link:hover {
+    background: var(--dark);
+    transform: translateY(-2px);
+}
+
+/* Etiquetas (Badges) sobre las imágenes */
+.product-card {
+    position: relative;
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--secondary);
+    color: var(--dark);
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 10;
+    text-transform: uppercase;
+}
+
+/* Mejora visual de la descripción */
+.product-info p {
+    height: 60px; /* Mantiene la alineación si el texto varía */
+    overflow: hidden;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* --- FOOTER (Tu código) --- */
+footer {
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+/* --- MEDIA QUERIES (Tu código) --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .search-bar input, .search-bar button {
+        width: 100%;
+    }
+}

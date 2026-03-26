@@ -82,6 +82,96 @@ header .container {
     text-decoration: none;
     color: white;
 }
+.cart-button {
+    background-color: seagreen;
+    color: seagreen;
+    padding: 15px;
+    border-radius: 90%;
+    cursor: pointer;
+    font-size: 24px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.cart-button:hover {
+    transform: scale(1.1);
+}
+
+/* Ocultar el checkbox */
+.cart-checkbox {
+    display: none;
+}
+
+/* Ventana emergente (Modal) */
+.cart-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculta por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Mostrar la ventana cuando el checkbox esté marcado */
+.cart-checkbox:checked ~ .cart-window {
+    display: flex;
+}
+
+/* Contenido de la ventana */
+.cart-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.company-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Botón de cerrar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Botón con el link */
+.external-link-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.external-link-button:hover {
+    background-color: #218838;
+}
 
 .info-image {
     flex: 1;
