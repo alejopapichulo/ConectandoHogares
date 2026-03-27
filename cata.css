@@ -1,6 +1,6 @@
 :root {
-    --primary: #2563eb;    /* Azul profesional */
-    --secondary: #fbbf24;  /* Amarillo/Naranja para el span */
+    --primary: #2563eb;
+    --secondary: #fbbf24; 
     --white: #ffffff;
     --dark: #1e293b;
     --light-bg: #f8fafc;
@@ -24,7 +24,6 @@ body {
     padding: 0 20px;
 }
 
-/* --- HEADER (Tu código con ajustes) --- */
 header {
     background: var(--primary);
     color: var(--white);
@@ -98,15 +97,13 @@ header .container {
     text-transform: uppercase;
 }
 
-/* Mejora visual de la descripción */
 .product-info p {
-    height: 60px; /* Mantiene la alineación si el texto varía */
+    height: 60px;
     overflow: hidden;
     margin-bottom: 20px;
     line-height: 1.4;
 }
 
-/* --- FOOTER (Tu código) --- */
 footer {
     background: var(--dark);
     color: var(--white);
@@ -120,7 +117,6 @@ footer a {
     text-decoration: none;
 }
 
-/* --- MEDIA QUERIES (Tu código) --- */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;

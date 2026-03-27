@@ -104,12 +104,10 @@ header .container {
     transform: scale(1.1);
 }
 
-/* Ocultar el checkbox */
 .cart-checkbox {
     display: none;
 }
 
-/* Ventana emergente (Modal) */
 .cart-window {
     position: fixed;
     top: 0;
@@ -123,12 +121,10 @@ header .container {
     z-index: 2000;
 }
 
-/* Mostrar la ventana cuando el checkbox esté marcado */
 .cart-checkbox:checked ~ .cart-window {
     display: flex;
 }
 
-/* Contenido de la ventana */
 .cart-content {
     background-color: white;
     padding: 30px;
@@ -139,14 +135,12 @@ header .container {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* Logo */
 .company-logo img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-/* Botón de cerrar */
 .close-button {
     position: absolute;
     top: 10px;
@@ -156,7 +150,6 @@ header .container {
     color: #333;
 }
 
-/* Botón con el link */
 .external-link-button {
     display: inline-block;
     margin-top: 15px;
