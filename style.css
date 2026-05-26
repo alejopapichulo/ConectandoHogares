@@ -278,10 +278,24 @@ footer {
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
+        text-align: center;
+        gap: 8px;
     }
-    
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
     .nav-links {
-        margin-top: 15px;
+        margin-top: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .nav-links li a {
+        margin-left: 10px;
+        font-size: 0.9rem;
     }
 
     .search-bar input {

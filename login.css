@@ -136,3 +136,32 @@
 .error-message:not(:empty) {
     display: block;
 }
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+    }
+
+    .login-box {
+        padding: 20px 15px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        font-size: 0.85rem;
+    }
+
+    .input-group input {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    .btn-primary, .btn-google {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
