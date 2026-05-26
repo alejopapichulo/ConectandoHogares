@@ -18,6 +18,11 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#categorias">Categorías</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li id="auth-nav-item"><a href="login.html" id="auth-link">Iniciar Sesión</a></li>
+                    <li id="user-info-item" style="display: none; align-items: center; gap: 10px; margin-left: 25px; border-left: 1px solid rgba(255,255,255,0.3); padding-left: 15px;">
+                        <span id="user-name-display" style="color: white; font-weight: 500; font-size: 0.95rem;"></span>
+                        <img id="user-avatar" src="" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: none; border: 2px solid var(--secondary);">
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -167,5 +172,6 @@
         </div>
     </footer>
 
+    <script type="module" src="auth-state.js"></script>
 </body>
 </html>
